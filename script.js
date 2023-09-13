@@ -24,8 +24,9 @@ let dataStructer = [];
 
 // |===============<< | 1/5 | Data Load From Server, When Markup Load >>===============|
 document.addEventListener("DOMContentLoaded", function () {
-    dataStructer = JSON.parse(localStorage.getItem("mainJsonData"));
-
+    if(localStorage.getItem("mainJsonData") !== null) {
+        dataStructer = JSON.parse(localStorage.getItem("mainJsonData"));
+    
     dataStructer.map((item) => {
         let eachList = document.createElement("li");
         eachList.classList.add("each-list");
@@ -72,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         // |===============<< XXXXXX >>===============|
     });
+    }
 });
 
 // |===============<< XXXXXX >>===============|
@@ -91,7 +93,7 @@ todoAddingBtn.addEventListener("click", function () {
             task: inputArea.value,
             taskStatus: true,
         };
-
+        
         dataStructer.unshift(eachDataObj);
 
         // |===============<< | 2/5 | Updating LocalStorage Data When Add New Todo >>===============|
