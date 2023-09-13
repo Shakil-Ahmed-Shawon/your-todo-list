@@ -1,0 +1,151 @@
+/* |===============<< Reseting CSS & Default Style's >>===============| */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    width: 100%;
+    height: 955px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #051e3e;
+}
+/* |===============<< XXXXXX >>===============| */
+
+/* |===============<< ToDo List Container >>===============| */
+.container{
+    width: 35%;
+    height: 800px;
+    border-radius: 10px;
+    background-color: #851e3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* |===============<< Main Title >>===============| */
+.todo-title h1{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* |===============<< ToDo Input & Adding >>===============| */
+.todo-input-and-submit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-input-area{
+    width: 80%;
+    padding: 13px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    caret-color: #851e3e;
+    background-color: #251e3e;
+}
+
+#todo-input-area::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #251e3e;
+}
+
+#todo-submit-btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #251e3e;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    transition: all 0.2s linear;
+}
+
+#todo-submit-btn:hover{
+    color: #fff;
+    background-color: #051e3e;
+}
+
+/* |===============<< 2 Horizintal Line's >>===============| */
+.hr-line{
+    width: 70%;
+    height: 2px;
+    border: none;
+    margin-bottom: 6px;
+    background-color: #251e3e;
+}
+
+/* |===============<< Todo List Container >>===============| */
+.all-todo-list-container{
+    width: 80%;
+    margin-top: 30px;
+    list-style-type: none;
+    overflow: scroll;
+}
+    /* |===============<< Each ToDo List >>===============| */
+.each-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.each-list-text{
+    width: 80%;
+    border: 3px solid #051e3e;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #651e3e;
+}
+
+.todo-list-btn{
+    width: 50px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #051e3e;
+    border-radius: 5px;
+    background-color: #051e3e;
+    transition: all 0.2s linear;
+}
+
+.complete-task{
+    color: green;
+    margin-right: 8px;
+}
+
+.complete-task:hover{
+    color: #051e3e;
+    background-color: green;
+}
+
+.delete-task{
+    color: red;
+}
+
+.delete-task:hover{
+    color: #051e3e;
+    background-color: red;
+}
+/* |===============<< XXXXXX >>===============| */
