@@ -50,7 +50,7 @@ body{
     align-items: center;
 }
 
-#todo-input-area{
+.todo-input-area{
     width: 80%;
     padding: 13px;
     font-size: 18px;
@@ -62,10 +62,19 @@ body{
     background-color: #251e3e;
 }
 
-#todo-input-area::placeholder{
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #251e3e;
+.todo-input-area:focus{
+    outline: none;
 }
+
+.todo-input-area::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    /* |===============<< Extra Placeholder Color Using JS >>===============| */
+    #todo-input-area-black::placeholder{
+        color: rgba(0, 0, 0, 0.8);
+    }
+    /* |===============<< XXXXXX >>===============| */
 
 #todo-submit-btn{
     text-transform: uppercase;
@@ -147,5 +156,64 @@ body{
 .delete-task:hover{
     color: #051e3e;
     background-color: red;
+}
+/* |===============<< XXXXXX >>===============| */
+
+/* |===============<< Theme Section >>===============| */
+.theme-container{
+    width: 300px;
+    height: 300px;
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-container div{
+    width: 120px;
+    aspect-ratio: 2/1;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.light-color{
+    color:  #f6abb6;
+    background-color: #eee3e7;
+}
+
+.dark-color{
+    color: #36454f;
+    background-color: #6e7f80;
+}
+
+.beautiful-blues{
+    color: #b3cde0;
+    background-color: #011f4b;
+}
+
+.beautiful-pink, .beautiful-pink a:link{
+    text-decoration: none;
+    color:  #851e3e;
+    background-color: #051e3e;
+}
+
+.google-colors{
+    color:  #fff;
+    background-color: #008744;
+}
+
+.metro-ui{
+    color:  #ffc425;
+    background-color: #d11141;
 }
 /* |===============<< XXXXXX >>===============| */
