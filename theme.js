@@ -25,6 +25,10 @@ let submitBtn = document.querySelector('#todo-submit-btn');
 
 let hrLines = document.querySelectorAll('.hr-line');
 
+let themeSelectBtn = document.querySelector('#theme-btn');
+
+let themeContainer = document.querySelector('.theme-container');
+
 
 // |===============<< XXXXXX >>===============|
 
@@ -211,4 +215,17 @@ lightColor.addEventListener('click', function() {
     })
         // |===============<< XXXXXX >>===============|
 
+// |===============<< XXXXXX >>===============|
+
+// |===============<< Theme In Out Functionality >>===============|
+let themeContainerStatus = true;
+themeSelectBtn.addEventListener('click',function() {
+    if(themeContainerStatus) {
+        themeContainer.style.left = '0px';
+        themeContainerStatus = false;
+    } else {
+        themeContainer.style.left = '-300px';
+        themeContainerStatus = true;
+    }
+})
 // |===============<< XXXXXX >>===============|

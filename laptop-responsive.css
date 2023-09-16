@@ -1,0 +1,31 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+    body{
+        height: 500px;
+    }
+    
+    /* |===============<< ToDo List Container >>===============| */
+    .container{
+        width: 70%;
+        height: 400px;
+    }
+
+    /* |===============<< ToDo Input & Adding >>===============| */
+    #todo-submit-btn{
+        margin-bottom: 40px;
+    }
+
+    /* |===============<< Theme In Out Btn >>===============| */
+    #theme-btn{
+        padding: 5px 8px;
+        font-size: 15px;
+        top: 10px;
+        left: 10px;
+    }
+    /* |===============<< XXXXXX >>===============| */
+
+    /* |===============<< Theme Section >>===============| */
+    .theme-container{
+        transform: scale(0.6);
+    }
+    /* |===============<< XXXXXX >>===============| */
+}
