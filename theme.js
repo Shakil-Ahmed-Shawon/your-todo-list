@@ -21,7 +21,7 @@ let todoContainer = document.querySelector('.container');
 
 let inputAreaBox = document.querySelector('.todo-input-area');
 
-let submitBtn = document.querySelector('#todo-submit-btn');
+let submitBtn = document.querySelector('.todo-submit-btn');
 
 let hrLines = document.querySelectorAll('.hr-line');
 
@@ -29,189 +29,88 @@ let themeSelectBtn = document.querySelector('#theme-btn');
 
 let themeContainer = document.querySelector('.theme-container');
 
+let mainUlContainer = document.querySelector('.all-todo-list-container');
+
 
 // |===============<< XXXXXX >>===============|
 
 // |===============<< Theme Change Functionality >>===============|
     // |===============<< For Light Color Theme >>===============|
 lightColor.addEventListener('click', function() {
-    bodyElement.style.backgroundColor = '#eee3e7';
-    mainTitle.style.color = '#000';
-    todoContainer.style.backgroundColor = '#f6abb6';
-    inputAreaBox.style.backgroundColor = '#ead5dc';
-    inputAreaBox.style.color = '#000';
-    inputAreaBox.setAttribute('id', 'todo-input-area-black');
-    submitBtn.addEventListener('mouseover', function() {
-        submitBtn.style.color = 'rgba(0, 0, 0, 0.5)';
-        submitBtn.style.backgroundColor = '#ead5dc';
-    })
-    submitBtn.addEventListener('mouseout', function() {
-        submitBtn.style.color = '#000';
-        submitBtn.style.backgroundColor = '#fff';
-    })
+    bodyElement.setAttribute('id', 'body-bg-light');
+    mainTitle.setAttribute('id', 'main-title-light');
+    todoContainer.setAttribute('id', 'todo-container-light');
+    inputAreaBox.setAttribute('id', 'input-area-box-light');
+    submitBtn.setAttribute('id', 'submit-btn-light');
     hrLines[0].style.backgroundColor = '#eee3e7';
     hrLines[1].style.backgroundColor = '#eee3e7';
+    mainUlContainer.setAttribute('id', 'main-ul-container-light');
 
-    let eachListTodo = document.querySelectorAll('.each-list-text');
-    for(let i = 0; i < eachListTodo.length; i++) {
-        eachListTodo[i].style.backgroundColor = '#eec9d2';
-        eachListTodo[i].style.borderColor = '#eee3e7';
-        eachListTodo[i].style.color = '#000';
-    }
-
-
-    let listBtns = document.querySelectorAll('.todo-list-btn');
-    for(let j = 0; j < listBtns.length; j++) {
-        listBtns[j].style.backgroundColor = '#eee3e7';
-        listBtns[j].style.borderColor = '#eee3e7';
-    }
 })
     // |===============<< XXXXXX >>===============|
 
     // |===============<< For Dark Color Theme >>===============|
     darkColor.addEventListener('click', function() {
-        bodyElement.style.backgroundColor = '#6e7f80';
-        mainTitle.style.color = '#fff';
-        todoContainer.style.backgroundColor = '#36454f';
-        inputAreaBox.style.backgroundColor = '#536872';
-        inputAreaBox.style.color = '#fff';
-        inputAreaBox.removeAttribute('id');
-        submitBtn.addEventListener('mouseover', function() {
-            submitBtn.style.color = 'rgba(255, 255, 255, 0.8)';
-            submitBtn.style.backgroundColor = '#536872';
-        })
-        submitBtn.addEventListener('mouseout', function() {
-            submitBtn.style.color = '#000';
-            submitBtn.style.backgroundColor = '#fff';
-        })
+        bodyElement.setAttribute('id', 'body-bg-dark');
+        mainTitle.setAttribute('id', 'main-title-dark');
+        todoContainer.setAttribute('id', 'todo-container-dark');
+        inputAreaBox.setAttribute('id', 'input-area-box-dark');
+        submitBtn.setAttribute('id', 'submit-btn-dark');
         hrLines[0].style.backgroundColor = '#6e7f80';
         hrLines[1].style.backgroundColor = '#6e7f80';
-    
-        let eachListTodo = document.querySelectorAll('.each-list-text');
-        for(let i = 0; i < eachListTodo.length; i++) {
-            eachListTodo[i].style.backgroundColor = '#708090';
-            eachListTodo[i].style.borderColor = '#6e7f80';
-            eachListTodo[i].style.color = '#fff';
-        }
-    
-    
-        let listBtns = document.querySelectorAll('.todo-list-btn');
-        for(let j = 0; j < listBtns.length; j++) {
-            listBtns[j].style.backgroundColor = '#6e7f80';
-            listBtns[j].style.borderColor = '#6e7f80';
-        }
+        mainUlContainer.setAttribute('id', 'main-ul-container-dark');
     })
     // |===============<< XXXXXX >>===============|
 
     // |===============<< For Beautiful Blues Color Theme >>===============|
     blueColor.addEventListener('click', function() {
-        bodyElement.style.backgroundColor = '#011f4b';
-        mainTitle.style.color = '#000';
-        todoContainer.style.backgroundColor = '#b3cde0';
-        inputAreaBox.style.backgroundColor = '#03396c';
-        inputAreaBox.style.color = '#fff';
-        inputAreaBox.removeAttribute('id');
-        submitBtn.addEventListener('mouseover', function() {
-            submitBtn.style.color = 'rgba(255, 255, 255, 0.8)';
-            submitBtn.style.backgroundColor = '#03396c';
-        })
-        submitBtn.addEventListener('mouseout', function() {
-            submitBtn.style.color = '#000';
-            submitBtn.style.backgroundColor = '#fff';
-        })
+        bodyElement.setAttribute('id', 'body-bg-blue');
+        mainTitle.setAttribute('id', 'main-title-blue');
+        todoContainer.setAttribute('id', 'todo-container-blue');
+        inputAreaBox.setAttribute('id', 'input-area-box-blue');
+        submitBtn.setAttribute('id', 'submit-btn-blue');
         hrLines[0].style.backgroundColor = '#011f4b';
         hrLines[1].style.backgroundColor = '#011f4b';
-    
-        let eachListTodo = document.querySelectorAll('.each-list-text');
-        for(let i = 0; i < eachListTodo.length; i++) {
-            eachListTodo[i].style.backgroundColor = '#005b96';
-            eachListTodo[i].style.borderColor = '#011f4b';
-            eachListTodo[i].style.color = '#fff';
-        }
-    
-    
-        let listBtns = document.querySelectorAll('.todo-list-btn');
-        for(let j = 0; j < listBtns.length; j++) {
-            listBtns[j].style.backgroundColor = '#011f4b';
-            listBtns[j].style.borderColor = '#011f4b';
-        }
+        mainUlContainer.setAttribute('id', 'main-ul-container-blue');
     })
     // |===============<< XXXXXX >>===============|
 
     // |===============<< For Perfect Pink Color Theme >>===============|
-
-              // Default Theme. Just reload Web Page.
-
+    pinkColor.addEventListener('click', function() {
+        bodyElement.setAttribute('id', '');
+        mainTitle.setAttribute('id', '');
+        todoContainer.setAttribute('id', '');
+        inputAreaBox.setAttribute('id', '');
+        submitBtn.setAttribute('id', '');
+        hrLines[0].style.backgroundColor = '#251e3e';
+        hrLines[1].style.backgroundColor = '#251e3e';
+        mainUlContainer.setAttribute('id', '');
+    })
     // |===============<< XXXXXX >>===============|
 
     // |===============<< For Google Color Theme >>===============|
     googleColor.addEventListener('click', function() {
-        bodyElement.style.backgroundColor = '#008744';
-        mainTitle.style.color = '#000';
-        todoContainer.style.backgroundColor = '#fff';
-        inputAreaBox.style.backgroundColor = '#0057e7';
-        inputAreaBox.style.color = '#fff';
-        inputAreaBox.removeAttribute('id');
-        submitBtn.style.backgroundColor = '#ffa700';
-        submitBtn.addEventListener('mouseover', function() {
-            submitBtn.style.color = '#fff';
-            submitBtn.style.backgroundColor = '#0057e7';
-        })
-        submitBtn.addEventListener('mouseout', function() {
-            submitBtn.style.color = '#000';
-            submitBtn.style.backgroundColor = '#ffa700';
-        })
+        bodyElement.setAttribute('id', 'body-bg-google-color');
+        mainTitle.setAttribute('id', 'main-title-google-color');
+        todoContainer.setAttribute('id', 'todo-container-google-color');
+        inputAreaBox.setAttribute('id', 'input-area-box-google-color');
+        submitBtn.setAttribute('id', 'submit-btn-google-color');
         hrLines[0].style.backgroundColor = '#008744';
         hrLines[1].style.backgroundColor = '#008744';
-    
-        let eachListTodo = document.querySelectorAll('.each-list-text');
-        for(let i = 0; i < eachListTodo.length; i++) {
-            eachListTodo[i].style.backgroundColor = '#d62d20';
-            eachListTodo[i].style.borderColor = '#008744';
-            eachListTodo[i].style.color = '#fff';
-        }
-    
-    
-        let listBtns = document.querySelectorAll('.todo-list-btn');
-        for(let j = 0; j < listBtns.length; j++) {
-            listBtns[j].style.backgroundColor = '#008744';
-            listBtns[j].style.borderColor = '#008744';
-        }
+        mainUlContainer.setAttribute('id', 'main-ul-container-google-color');
     })
         // |===============<< XXXXXX >>===============|
 
     // |===============<< For Metro UI Color Theme >>===============|
     metroUiColor.addEventListener('click', function() {
-        bodyElement.style.backgroundColor = '#d11141';
-        mainTitle.style.color = '#000';
-        todoContainer.style.backgroundColor = '#ffc425';
-        inputAreaBox.style.backgroundColor = '#00b159';
-        inputAreaBox.style.color = '#000';
-        inputAreaBox.setAttribute('id', 'todo-input-area-black');
-        submitBtn.addEventListener('mouseover', function() {
-            submitBtn.style.color = 'rgba(255, 255, 255, 0.8)';
-            submitBtn.style.backgroundColor = '#d11141';
-        })
-        submitBtn.addEventListener('mouseout', function() {
-            submitBtn.style.color = '#000';
-            submitBtn.style.backgroundColor = '#fff';
-        })
+        bodyElement.setAttribute('id', 'body-bg-metro-ui');
+        mainTitle.setAttribute('id', 'main-title-metro-ui');
+        todoContainer.setAttribute('id', 'todo-container-metro-ui');
+        inputAreaBox.setAttribute('id', 'input-area-box-metro-ui');
+        submitBtn.setAttribute('id', 'submit-btn-metro-ui');
         hrLines[0].style.backgroundColor = '#d11141';
         hrLines[1].style.backgroundColor = '#d11141';
-    
-        let eachListTodo = document.querySelectorAll('.each-list-text');
-        for(let i = 0; i < eachListTodo.length; i++) {
-            eachListTodo[i].style.backgroundColor = '#00aedb';
-            eachListTodo[i].style.borderColor = '#d11141';
-            eachListTodo[i].style.color = '#000';
-        }
-    
-    
-        let listBtns = document.querySelectorAll('.todo-list-btn');
-        for(let j = 0; j < listBtns.length; j++) {
-            listBtns[j].style.backgroundColor = '#d11141';
-            listBtns[j].style.borderColor = '#d11141';
-        }
+        mainUlContainer.setAttribute('id', 'main-ul-container-metro-ui');
     })
         // |===============<< XXXXXX >>===============|
 

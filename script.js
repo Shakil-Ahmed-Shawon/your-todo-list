@@ -2,7 +2,7 @@
 
 // |===============<< ToDo Input & Adding >>===============|
 let inputArea = document.querySelector(".todo-input-area");
-let todoAddingBtn = document.getElementById("todo-submit-btn");
+let todoAddingBtn = document.querySelector(".todo-submit-btn");
 
 // |===============<< Todo List Container >>===============|
 let listContainer = document.querySelector(".all-todo-list-container");

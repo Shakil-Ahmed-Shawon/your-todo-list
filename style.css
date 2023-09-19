@@ -70,13 +70,7 @@ body{
     color: rgba(255, 255, 255, 0.8);
 }
 
-    /* |===============<< Extra Placeholder Color Using JS >>===============| */
-    #todo-input-area-black::placeholder{
-        color: rgba(0, 0, 0, 0.8);
-    }
-    /* |===============<< XXXXXX >>===============| */
-
-#todo-submit-btn{
+.todo-submit-btn{
     text-transform: uppercase;
     font-weight: bold;
     color: #251e3e;
@@ -88,7 +82,7 @@ body{
     transition: all 0.2s linear;
 }
 
-#todo-submit-btn:hover{
+.todo-submit-btn:hover{
     color: #fff;
     background-color: #051e3e;
 }
@@ -229,8 +223,7 @@ body{
     background-color: #011f4b;
 }
 
-.beautiful-pink, .beautiful-pink a:link{
-    text-decoration: none;
+.beautiful-pink{
     color:  #851e3e;
     background-color: #051e3e;
 }
@@ -244,4 +237,285 @@ body{
     color:  #ffc425;
     background-color: #d11141;
 }
+/* |===============<< XXXXXX >>===============| */
+
+/* |===============<< Theme's Adding >>===============| */
+    /* |===============<< For Light Color Theme >>===============| */
+#body-bg-light{
+    background-color: #eee3e7;
+}
+
+#main-title-light{
+    color: #000;
+}
+
+#todo-container-light{
+    background-color: #f6abb6;
+}
+
+#input-area-box-light{
+    background-color: #ead5dc;
+    color: #000;
+}
+
+#input-area-box-light::placeholder{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#submit-btn-light{
+    color: #000;
+    background-color: #fff;
+}
+
+#submit-btn-light:hover{
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #ead5dc;
+}
+
+#main-ul-container-light .each-list p{
+    background-color: #eec9d2;
+    border-color: #eee3e7;
+    color: #000;
+}
+
+#main-ul-container-light .each-list .todo-list-btn{
+    background-color: #eee3e7;
+    border-color: #eee3e7;
+}
+
+#main-ul-container-light .each-list .complete-task:hover{
+    color: #eee3e7;
+    background-color: green;
+}
+
+#main-ul-container-light .each-list .delete-task:hover{
+    color: #eee3e7;
+    background-color: red;
+}
+    /* |===============<< XXXXXX >>===============| */
+
+    
+
+    /* |===============<< For Dark Color Theme >>===============| */
+#body-bg-dark{
+    background-color: #6e7f80;
+}
+
+#main-title-dark{
+    color: #fff;
+}
+
+#todo-container-dark{
+    background-color: #36454f;
+}
+
+#input-area-box-dark{
+    background-color: #536872;
+    color: #fff;
+}
+
+#submit-btn-dark{
+    color: #000;
+    background-color: #fff;
+}
+
+#submit-btn-dark:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #536872;
+}
+
+#main-ul-container-dark .each-list p{
+    background-color: #708090;
+    border-color: #6e7f80;
+    color: #fff;
+}
+
+#main-ul-container-dark .each-list .todo-list-btn{
+    background-color: #6e7f80;
+    border-color: #6e7f80;
+}
+
+#main-ul-container-dark .each-list .complete-task:hover{
+    color: #6e7f80;
+    background-color: green;
+}
+
+#main-ul-container-dark .each-list .delete-task:hover{
+    color: #6e7f80;
+    background-color: red;
+}
+    /* |===============<< XXXXXX >>===============| */
+
+
+    
+     /* |===============<< For Beautiful Blues Color Theme >>===============| */
+#body-bg-blue{
+    background-color: #011f4b;
+}
+
+#main-title-blue{
+    color: #000;
+}
+
+#todo-container-blue{
+    background-color: #b3cde0;
+}
+
+#input-area-box-blue{
+    background-color: #03396c;
+    color: #fff;
+}
+
+#input-area-box-blue::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#submit-btn-blue{
+    color: #000;
+    background-color: #fff;
+}
+
+#submit-btn-blue:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #03396c;
+}
+
+#main-ul-container-blue .each-list p{
+    background-color: #005b96;
+    border-color: #011f4b;
+    color: #fff;
+}
+
+#main-ul-container-blue .each-list .todo-list-btn{
+    background-color: #011f4b;
+    border-color: #011f4b;
+}
+
+#main-ul-container-blue .each-list .complete-task:hover{
+    color: #011f4b;
+    background-color: green;
+}
+
+#main-ul-container-blue .each-list .delete-task:hover{
+    color: #011f4b;
+    background-color: red;
+}
+    /* |===============<< XXXXXX >>===============| */
+
+
+
+    /* |===============<< For Google Color Theme >>===============| */
+#body-bg-google-color{
+    background-color: #008744;
+}
+
+#main-title-google-color{
+    color: #000;
+}
+
+#todo-container-google-color{
+    background-color: #fff;
+}
+
+#input-area-box-google-color{
+    background-color: #0057e7;
+    color: #fff;
+}
+
+#input-area-box-google-color::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#submit-btn-google-color{
+    color: #000;
+    background-color: #ffa700;
+}
+
+#submit-btn-google-color:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0057e7;
+}
+
+#main-ul-container-google-color .each-list p{
+    background-color: #d62d20;
+    border-color: #008744;
+    color: #fff;
+}
+
+#main-ul-container-google-color .each-list .todo-list-btn{
+    background-color: #ffa700;
+    border-color: #ffa700;
+}
+
+#main-ul-container-google-color .each-list .complete-task:hover{
+    color: #ffa700;
+    background-color: green;
+}
+
+#main-ul-container-google-color .each-list .delete-task:hover{
+    color: #ffa700;
+    background-color: red;
+}
+    /* |===============<< XXXXXX >>===============| */
+
+
+
+    /* |===============<< For Metro UI Color Theme >>===============| */
+#body-bg-metro-ui{
+    background-color: #d11141;
+}
+
+#main-title-metro-ui{
+    color: #000;
+}
+
+#todo-container-metro-ui{
+    background-color: #ffc425;
+}
+
+#input-area-box-metro-ui{
+    background-color: #00b159;
+    color: #000;
+}
+
+#input-area-box-metro-ui::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#submit-btn-metro-ui{
+    color: #000;
+    background-color: #fff;
+}
+
+#submit-btn-metro-ui:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #d11141;
+}
+
+#main-ul-container-metro-ui .each-list p{
+    background-color: #00aedb;
+    border-color: #d11141;
+    color: #000;
+}
+
+#main-ul-container-metro-ui .each-list .todo-list-btn{
+    background-color: #d11141;
+    border-color: #d11141;
+}
+
+#main-ul-container-metro-ui .each-list .complete-task:hover{
+    color: #d11141;
+    background-color: green;
+}
+
+#main-ul-container-metro-ui .each-list .delete-task{
+    color: #000;
+}
+
+#main-ul-container-metro-ui .each-list .delete-task:hover{
+    color: #000;
+    background-color: #00aedb;
+}
+    /* |===============<< XXXXXX >>===============| */
+
 /* |===============<< XXXXXX >>===============| */
