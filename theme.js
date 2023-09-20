@@ -35,6 +35,12 @@ let mainUlContainer = document.querySelector('.all-todo-list-container');
 // |===============<< XXXXXX >>===============|
 
 // |===============<< Theme Change Functionality >>===============|
+
+    // |===============<< Theme Remember Functionality >>===============|
+    let currentTheme;
+    // |===============<< XXXXXX >>===============|
+
+
     // |===============<< For Light Color Theme >>===============|
 lightColor.addEventListener('click', function() {
     bodyElement.setAttribute('id', 'body-bg-light');
@@ -45,6 +51,9 @@ lightColor.addEventListener('click', function() {
     hrLines[0].style.backgroundColor = '#eee3e7';
     hrLines[1].style.backgroundColor = '#eee3e7';
     mainUlContainer.setAttribute('id', 'main-ul-container-light');
+
+    currentTheme = 1;
+    localStorage.setItem('ThemeData', currentTheme);
 
 })
     // |===============<< XXXXXX >>===============|
@@ -59,6 +68,9 @@ lightColor.addEventListener('click', function() {
         hrLines[0].style.backgroundColor = '#6e7f80';
         hrLines[1].style.backgroundColor = '#6e7f80';
         mainUlContainer.setAttribute('id', 'main-ul-container-dark');
+
+        currentTheme = 2;
+        localStorage.setItem('ThemeData', currentTheme);
     })
     // |===============<< XXXXXX >>===============|
 
@@ -72,6 +84,9 @@ lightColor.addEventListener('click', function() {
         hrLines[0].style.backgroundColor = '#011f4b';
         hrLines[1].style.backgroundColor = '#011f4b';
         mainUlContainer.setAttribute('id', 'main-ul-container-blue');
+
+        currentTheme = 3;
+        localStorage.setItem('ThemeData', currentTheme);
     })
     // |===============<< XXXXXX >>===============|
 
@@ -85,6 +100,9 @@ lightColor.addEventListener('click', function() {
         hrLines[0].style.backgroundColor = '#251e3e';
         hrLines[1].style.backgroundColor = '#251e3e';
         mainUlContainer.setAttribute('id', '');
+
+        currentTheme = 4;
+        localStorage.setItem('ThemeData', currentTheme);
     })
     // |===============<< XXXXXX >>===============|
 
@@ -98,6 +116,9 @@ lightColor.addEventListener('click', function() {
         hrLines[0].style.backgroundColor = '#008744';
         hrLines[1].style.backgroundColor = '#008744';
         mainUlContainer.setAttribute('id', 'main-ul-container-google-color');
+
+        currentTheme = 5;
+        localStorage.setItem('ThemeData', currentTheme);
     })
         // |===============<< XXXXXX >>===============|
 
@@ -111,6 +132,9 @@ lightColor.addEventListener('click', function() {
         hrLines[0].style.backgroundColor = '#d11141';
         hrLines[1].style.backgroundColor = '#d11141';
         mainUlContainer.setAttribute('id', 'main-ul-container-metro-ui');
+
+        currentTheme = 6;
+        localStorage.setItem('ThemeData', currentTheme);
     })
         // |===============<< XXXXXX >>===============|
 

@@ -22,7 +22,7 @@ let dataStructer = [];
 
 
 
-// |===============<< | 1/5 | Data Load From Server, When Markup Load >>===============|
+// |===============<< | 1/5 | Data Load From LocalStorage, When Markup Load >>===============|
 document.addEventListener("DOMContentLoaded", function () {
     if(localStorage.getItem("mainJsonData") !== null) {
         dataStructer = JSON.parse(localStorage.getItem("mainJsonData"));
@@ -74,6 +74,24 @@ document.addEventListener("DOMContentLoaded", function () {
         // |===============<< XXXXXX >>===============|
     });
     }
+
+    // |===============<< Current Theme Loading Functionality >>===============|
+    let currentThemeNum = localStorage.getItem('ThemeData');
+    
+    if(currentThemeNum == 1) {
+        lightColor.click();
+    } else if(currentThemeNum == 2) {
+        darkColor.click();
+    } else if(currentThemeNum == 3) {
+        blueColor.click();
+    } else if(currentThemeNum == 4) {
+        pinkColor.click();
+    } else if(currentThemeNum == 5) {
+        googleColor.click();
+    } else if(currentThemeNum == 6) {
+        metroUiColor.click();
+    }
+    // |===============<< XXXXXX >>===============|
 });
 
 // |===============<< XXXXXX >>===============|
